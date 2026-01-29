@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#image-display {
+  width: 80%;
+  height: 300px;
+  margin: 20px auto;
+  border: 2px solid #333;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+figure {
+  margin: 0;
+}
+
+figure img {
+  width: 150px;
+  height: 100px;
+  cursor: pointer;
+  border: 2px solid #333;
+}
+
+figure img:focus {
+  outline: 3px solid #007BFF;
+}
