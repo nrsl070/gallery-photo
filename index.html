@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="addTabIndex()">
+  <h1>My Photo Gallery</h1>
+
+  <div id="image-display">
+    Hover over an image below to display here.
+  </div>
+
+  <div class="gallery">
+    <figure>
+      <img src="images/photo1.jpg" alt="Sunset over mountains" 
+           onmouseover="upDate(this)" onmouseleave="undo()" 
+           onfocus="upDate(this)" onblur="undo()" tabindex="0">
+      <figcaption>Sunset over mountains</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/photo2.jpg" alt="Ocean waves crashing" 
+           onmouseover="upDate(this)" onmouseleave="undo()" 
+           onfocus="upDate(this)" onblur="undo()" tabindex="0">
+      <figcaption>Ocean waves crashing</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/photo3.jpg" alt="Forest in the morning" 
+           onmouseover="upDate(this)" onmouseleave="undo()" 
+           onfocus="upDate(this)" onblur="undo()" tabindex="0">
+      <figcaption>Forest in the morning</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/photo4.jpg" alt="City skyline at night" 
+           onmouseover="upDate(this)" onmouseleave="undo()" 
+           onfocus="upDate(this)" onblur="undo()" tabindex="0">
+      <figcaption>City skyline at night</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/photo5.jpg" alt="Snowy mountain peak" 
+           onmouseover="upDate(this)" onmouseleave="undo()" 
+           onfocus="upDate(this)" onblur="undo()" tabindex="0">
+      <figcaption>Snowy mountain peak</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/photo6.jpg" alt="Desert dunes at sunset" 
+           onmouseover="upDate(this)" onmouseleave="undo()" 
+           onfocus="upDate(this)" onblur="undo()" tabindex="0">
+      <figcaption>Desert dunes at sunset</figcaption>
+    </figure>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
