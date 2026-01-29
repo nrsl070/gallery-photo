@@ -1,20 +1,34 @@
-function upDate(previewPic) {
-  console.log("Event triggered");
-  const display = document.getElementById('image-display');
-  display.style.backgroundImage = `url('${previewPic.src}')`;
-  display.textContent = previewPic.alt;
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
 }
 
-function undo() {
-  const display = document.getElementById('image-display');
-  display.style.backgroundImage = '';
-  display.textContent = 'Hover over an image below to display here.';
+#image-display {
+  width: 600px;
+  height: 400px;
+  margin: 20px auto;
+  border: 2px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
 }
 
-function addTabIndex() {
-  const imgs = document.querySelectorAll('.gallery img');
-  for (let i = 0; i < imgs.length; i++) {
-    imgs[i].setAttribute('tabindex', 0);
-  }
-  console.log("Tabindex added to images");
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gallery figure {
+  margin: 0;
+}
+
+.gallery img {
+  width: 150px;
+  height: 100px;
+  cursor: pointer;
+  border: 2px solid #333;
 }
